@@ -1,11 +1,9 @@
 import '../App.css';
-import Navbar from './nav';
-import Footer from '../footer';
 
 function Home() {
   return (
     <div className="Home">
-      <Navbar />
+      
       <section className="hero">
         <h1 className='textinho'>Explore Salvador da forma mais acessível para você.</h1>
         <div className="img-principal">
@@ -47,11 +45,10 @@ function Home() {
           <h2>Quem Somos</h2>
           <p>Somos uma plataforma de turismo comprometida em proporcionar experiências de viagem inclusivas para todos os viajantes. Acreditamos que viajar é um direito universal e estamos empenhados em tornar isso uma realidade para pessoas de todas as habilidades.</p>
           <div className="Julia">
-            <button className="btn-outline-dark btn-hover-color"><span className="material-symbols-outlined"></span>Contate</button>
+            <button  className="btn-outline-dark btn-hover-color"><img src={require('../assets/localização4.png')} alt="Imagem Principal" className='localizacao'/><span className="material-symbols-outlined"></span>Contate</button>
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

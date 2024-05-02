@@ -1,3 +1,4 @@
+
 :root {
   --text-01: #203F51;
   --light-01: #F9F9F9;
@@ -8,13 +9,16 @@
   --card-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
   --hover-timing: all 0.2s ease;
   --nav-card-size: 240px;
-
   -webkit-font-smoothing: antialiased;
   font: antialiased;
   scroll-behavior: smooth;
+  padding-left: 25px;
+
+
 
 
 }
+
 
 * {
   box-sizing: border-box;
@@ -22,17 +26,16 @@
   margin: 0;
 }
 
+
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   transition: var(--hover-timing);
-
   background: var(--light-01);
-
 width: 100vw;
 overflow-x: hidden;
-
 }
+
 
 header {
   /*    width: 100%;*/
@@ -43,18 +46,6 @@ header {
   z-index: 100;
 }
 
-.banner {
-  background: var(--brand-01);
-  color: var(--light-01);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.2;
-  padding: 8px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
 
 nav {
   color: var(--text-01);
@@ -70,6 +61,7 @@ nav {
   z-index: 100;
 }
 
+
 nav ul.navigation-menu {
   display: flex;
   flex-direction: row;
@@ -79,12 +71,15 @@ nav ul.navigation-menu {
   top: 0;
 }
 
+
 nav .navigation-menu a {
   font-size: 16px;
   text-decoration: none;
   color: var(--text-01);
 
+
 }
+
 
 nav .navigation-menu > li {
   display: flex;
@@ -92,6 +87,7 @@ nav .navigation-menu > li {
   align-items: center;
   /*    justify-items: center;*/
 }
+
 
 nav .navigation-menu > li > a {
   position: relative;
@@ -103,12 +99,16 @@ nav .navigation-menu > li > a {
   justify-items: center;
 }
 
+
 nav .navigation-menu > li:hover ul.subnav {
   visibility: visible;
   opacity: 1;
   top: 64px;
 
+
 }
+
+
 
 
 nav .navigation-menu > li > ul.subnav {
@@ -126,6 +126,8 @@ nav .navigation-menu > li > ul.subnav {
 }
 
 
+
+
 nav > #logo {
   display: flex;
   flex-direction: row;
@@ -135,9 +137,11 @@ nav > #logo {
   width: 200px;
 }
 
+
 nav > #logo > span {
   font-size: 32px;
 }
+
 
 nav > #utility {
   display: flex;
@@ -146,12 +150,10 @@ nav > #utility {
   grid-gap: 16px;
 }
 
+
 .card-large,
 .card-med {
-  /*    border: 1px solid orange;*/
   flex: 1;
-  /*    width: var(--nav-card-size);*/
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -159,6 +161,8 @@ nav > #utility {
   transition: var(--hover-timing);
   cursor: pointer;
 }
+
+
 
 
 .card-large {
@@ -170,14 +174,20 @@ nav > #utility {
 
 
 
+
+
+
 .card-large:hover {
   box-shadow: var(--card-hover);
   transform: scale(1.01);
 }
 
+
 .card-med:hover .card-image {
   transform: scale(1.01);
 }
+
+
 
 
 .card-image {
@@ -193,25 +203,29 @@ nav > #utility {
   transition: var(--hover-timing);
 }
 
+
 .card-large > .card-image {
   aspect-ratio: 3/2;
 }
+
 
 .card-image > img {
   width: 100%;
   height: 100%;
   position: absolute;
   object-fit: contain;
-  
+
 
 
 
 }
+
 
 .card-large a {
   text-decoration: none;
   font-weight: 600;
 }
+
 
 .card-large > .card-image > a {
   position: absolute;
@@ -225,35 +239,6 @@ nav > #utility {
 
 
 
-.card-large > ul {
-  /*    padding: 16px 0 24px;*/
-  display: flex;
-  flex-direction: column;
-  grid-gap: 8px;
-  flex: 1;
-  /*    border: 1px solid blue;*/
-
-  color: var(--text-01);
-
-  padding: 0 40px 40px;
-  font-size: 28px;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-
-
-.card-large > ul > li a {
-  line-height: 32px;
-  font-size: 14px;
-  /*    border: 1px solid red;*/
-}
-
-
-.card-large#sup-dog,
-.card-med#sup-dog > .card-image {
-  background: linear-gradient(45deg, #463631 0%, #976C5B 100%);
-}
 
 
 button.btn-outline {
@@ -261,34 +246,6 @@ button.btn-outline {
   border-color: var(--light-01);
 }
 
-
-.card-large#sup-cat,
-.card-med#sup-cat > .card-image {
-  background: linear-gradient(45deg, #F6AE6C 0%, #ECBD73 100%);
-}
-
-
-.card-large#sup-bird,
-.card-med#sup-bird > .card-image {
-  background: linear-gradient(45deg, #EFEFEF 0%, #F2F2F2 100%);
-}
-
-
-.card-large#sup-fish,
-.card-med#sup-fish > .card-image {
-  background: linear-gradient(45deg, #1E4782 0%, #709DDF 100%);
-}
-
-
-.card-large.card-dark a,
-.card-large.card-dark > ul {
-  color: var(--text-01);
-}
-
-.card-large.card-light a,
-.card-large.card-light > ul {
-  color: var(--light-01);
-}
 
 
 
@@ -304,14 +261,11 @@ button {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.btn-outline-light {
-  color: var(--light-01);
-  background: none;
-  color: var(--light-01);
-  border: 2px solid var(--light-01);
-}
+
+
 
 .btn-outline-dark {
   color: var(--text-01);
@@ -320,6 +274,7 @@ button {
   border: 2px solid var(--text-01);
 }
 
+
 .btn-filled-dark {
   color: var(--light-01);
   background: var(--text-01);
@@ -327,16 +282,7 @@ button {
   border: 2px solid var(--text-01);
 }
 
-.btn-outline-dark:hover {
-  background: var(--text-01);
-  border: 2px solid var(--text-01);
-}
 
-.btn-outline-light:hover {
-  background: var(--light-01);
-  border: 2px solid var(--light-01);
-  color: var(--text-01);
-}
 
 
 button:hover,
@@ -349,12 +295,18 @@ button:hover,
 }
 
 
+
+
 section,
 footer {
   position: relative;
   width: 100%;
   padding: 0 var(--pg-margin);
 }
+
+
+
+
 
 
 
@@ -369,13 +321,16 @@ section.hero {
   grid-gap: 48px;
   display: inline-flex;
 
+
 }
+
 
 .Mille {
   display: flex;
   flex-direction: row;
   grid-gap: 16px;
 }
+
 
 .Matheus {
   display: flex;
@@ -385,88 +340,24 @@ section.hero {
   bottom: 135px;
 }
 
+
 .Julia {
   display: flex;
   flex-direction: row;
   grid-gap: 16px;
 }
 
+
 section.hero h1 {
   font-size: var(--hero-text);
   font-weight: 600;
   line-height: 0;
   width: 20%;
-
   color: var(--text-01);
-}
-
-.card-med {
-  width: var(--nav-card-size);
-  height: auto;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-}
-
-.card-med > a {
-  display: flex;
-  flex-direction: column;
-  grid-gap: 4px;
-  padding: 12px 16px 0px;
-}
-
-.card-med > a > span {
-  width: 100%;
-}
-
-.card-med > a > span:nth-of-type(1) {
-  width: 100%;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 1.2;
-}
-
-.card-med > a > span:nth-of-type(2) {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  grid-gap: 6px;
-}
-
-.card-med > a > span:nth-of-type(2) > span {
-  font-size: 18px;
-}
-
-#serv-groom > .card-image {
-  background: linear-gradient(45deg, #203F51 0%, #3B6978  100%);
-  
-}
-
-#serv-board > .card-image {
-  background: linear-gradient(45deg, #EFEFEF 0%, #3B6978 100%);
-}
-
-.card-med:hover .card-image {
-  box-shadow: var(--card-hover);
-}
 
 
-.card-med > .card-image {
-  box-shadow: var(--card-shadow);
 }
 
-.card-med > .card-image > img {
-  width: 80%;
-  height: 80%;
-}
-
-section:not(.hero) {
-  padding: calc(var(--pg-margin)/2) var(--pg-margin);
-}
 
 section h2 {
   font-size: 32px;
@@ -478,24 +369,30 @@ section h2 {
 }
 
 
+
+
 .card-wide {
   flex-direction: row;
   padding: 0;
 }
+
 
 .card-wide .card-image {
   width: 50%;
   border-radius: 0;
 }
 
+
 .card-image img {
   width: 60%;
   height: 60%;
 }
 
+
 .card-wide > ul {
   padding: 40px;
 }
+
 
 .card-wide > ul > li {
   width: 100%;
@@ -507,26 +404,34 @@ section h2 {
 }
 
 
-.card-wide .subtitle {
+
+
+.card-large.card-light .subtitle {
   font-size: 45px;
   line-height: 1.4;
   font-weight: 500;
 
+
   margin-bottom: 24px;
 }
+
 
 .card-wide > ul > li span {
   font-size: 16px;
 }
+
 
 .card-large > ul > li:last-of-type {
   margin-bottom: 40px;
 }
 
 
+
+
 .card-large button {
   margin-top: auto;
 }
+
 
 #locate > div {
   background: var(--brand-02);
@@ -541,13 +446,16 @@ section h2 {
   cursor: pointer;
 }
 
+
 #locate > div:hover {
   box-shadow: var(--card-hover);
 }
 
+
 #locate h2 {
   margin-top: 0;
 }
+
 
 #locate p {
   line-height: 1.5;
@@ -557,18 +465,26 @@ section h2 {
 }
 
 
+
+
 .btn-group {
   display: flex;
   flex-direction: row;
   grid-gap: 16px;
 }
 
+
 footer {
+  position: absolute;
   background: var(--text-01);
   padding: 80px 80px 0px;
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
+  margin-left: 25px;
 }
+
+
+
 
 
 
@@ -578,26 +494,35 @@ footer ul {
   grid-gap: 24px;
   box-shadow: none;
   flex: 1;
-  color: var(--light-01);
+  color: white;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 80px;
 
+
 }
 
 
+
+
 footer ul li a {
-  color: var(--light-01);
+  color: white;
   text-decoration: none;
   font-size: 14px;
 }
 
 
+
+
 footer ul li {
-  color: var(--light-01);
+  color: white;
   padding: 0;
 
+
 }
+
+
+
 
 
 
@@ -606,25 +531,31 @@ footer ul li {
       --pg-margin: 16px;
   }
 
+
   section.hero {
       aspect-ratio: 1/1;
       padding-top: 64px;
 
+
   }
+
 
   section.hero h1 {
       --hero-text: 10px;
       width: 10%;
   }
 
+
   section.hero {
       background-size: 85%;
       background-position: 360% 60%;
   }
 
+
   nav {
       position: relative;
   }
+
 
   nav ul.navigation-menu {
       position: absolute;
@@ -636,26 +567,31 @@ footer ul li {
       width: 100vw;
   }
 
+
   nav ul.navigation-menu li a {
       font-size: 16px;
-      /*        padding: 0 12px;*/
+      padding: 0 12px;
       white-space: nowrap;
   }
+
 
   nav ul.navigation-menu .subnav {
       display: none;
   }
+
 
   nav ul.navigation-menu > li:hover .subnav {
       display: none;
   }
 
 
+
+
   .btn-group {
       flex-direction: column;
   }
 
-  .shop-pets,
+
   .services {
       display: flex;
       flex-direction: column;
@@ -663,23 +599,29 @@ footer ul li {
       width: 100%;
   }
 
+
   .services > li {
       display: flex;
       flex-direction: column;
   }
 
+
   .services > li > .card-image {
       width: 100%;
   }
+
 
   section:not(.hero) {
       padding: var(--pg-margin);
   }
 
+
   #locate p {
+
 
       width: 80%;
   }
+
 
   footer {
       flex-direction: column;
@@ -687,7 +629,10 @@ footer ul li {
   }
 
 
+
+
  
+
 
 .btn-group {
     display: flex;
@@ -695,16 +640,20 @@ footer ul li {
     grid-gap: 16px;
 }
 
+
 section.hero h1 {
     font-size: var(--hero-text);
     font-weight: 600;
     line-height: 1.2;
     width: 40%;
 
+
     color: var(--text-01);
 }
 
+
 }
+
 
 @media only screen and (min-width: 600px) {
   :root {
@@ -712,15 +661,20 @@ section.hero h1 {
   }
 
 
+
+
   section.hero h1 {
       --hero-text: 40px;
       width: 100%
   }
 
+
   nav {
       position: relative;
 
+
   }
+
 
   nav ul.navigation-menu {
       position: absolute;
@@ -731,31 +685,30 @@ section.hero h1 {
       width: 100vw;
   }
 
+
   nav ul.navigation-menu li a {
       font-size: 16px;
       white-space: nowrap;
   }
 
+
   nav ul.navigation-menu .subnav {
       display: none;
   }
 
+
   nav ul.navigation-menu > li:hover .subnav {
       display: none;
   }
+
 
   .btn-group {
       display: flex;
       flex-direction: column;
   }
 
-  .shop-pets {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-row: auto auto;
-      grid-column-gap: 24px;
-      grid-row-gap: 24px;
-  }
+
+
 
   .services {
       display: flex;
@@ -763,14 +716,18 @@ section.hero h1 {
       grid-gap: 24px;
   }
 
+
   section:not(.hero) {
       padding: var(--pg-margin);
   }
 
+
   #locate p {
+
 
       width: 60%;
   }
+
 
   footer {
       flex-direction: column;
@@ -778,87 +735,61 @@ section.hero h1 {
   }
 }
 
+
 @media only screen and (min-width: 1200px) {
   :root {
       --pg-margin: 48px;
   }
 
+
   section.hero h1 {
       --hero-text: 48px;
   }
 
+
   section.hero {
       aspect-ratio: 2/1;
 
+
   }
+
 
   .btn-group {
       flex-direction: row;
   }
 
-  .shop-pets,
-  .services {
-      display: flex;
-      flex-direction: row;
-      grid-gap: 24px;
-  }
 
-  ul.subnav {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-row: auto auto;
-      grid-column-gap: 24px;
-      grid-row-gap: 24px;
-      padding: 48px;
-  }
-
-
-  nav ul.navigation-menu {
-      top: 0;
-      z-index: 1;
-      background: none;
-      width: auto;
-      position: relative;
-  }
-
-  nav ul.navigation-menu .subnav {
-      display: flex;
-  }
-
-  nav ul.navigation-menu > li:hover .subnav {
-      display: flex;
-  }
-
-  #locate p {
-
-      width: 40%;
-  }
-
+ 
   footer {
+
+
 
 
       flex-direction: row;
       text-align: left;
 
+
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
 
   :root {
       --pg-margin: 80px;
   }
 
-  
+
+ 
   section.hero h1 {
       --hero-text: 56px;
       font-size: 40px;
   }
 
+
   nav .navigation-menu > li > ul.subnav {
       padding: 48px;
       grid-gap: 24px;
   }
+
 
   section.hero {
       aspect-ratio: 3/1;
@@ -866,12 +797,13 @@ section.hero h1 {
       background-position: 90% 60%;
   }
 
-  .shop-pets,
+
   .services {
       display: flex;
       flex-direction: row;
       grid-gap: 24px;
   }
+
 
   nav ul.navigation-menu {
       top: 0;
@@ -880,6 +812,7 @@ section.hero h1 {
       width: auto;
       position: relative;
   }
+
 
   ul.subnav {
       display: grid;
@@ -890,22 +823,31 @@ section.hero h1 {
       padding: 48px;
   }
 
+
   nav ul.navigation-menu > li:hover .subnav {
       display: grid;
   }
 
+
   #locate p {
+
 
       width: 40%;
   }
 
+
   footer {
+
+
 
 
       flex-direction: row;
       text-align: left;
 
+
   }
+
+
 
 
  .logo {
@@ -913,18 +855,35 @@ section.hero h1 {
   z-index: 100;
 }
 
+
 .img-principal{
   position: relative;
   right: -1100px;
 }
 
+
 .textinho{
   position: relative;
   top: 250px;
   font-size: 10px;
-  
+ 
+
 
 }
+.localizacao{
+  width: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
